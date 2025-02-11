@@ -10,7 +10,7 @@ loaded_model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(loaded_model_json)
 
-loaded_model.load_weights(r"D:\Machine Learning\Deep Learning\flowers_folder\flower.h5")
+loaded_model.load_weights("flower.h5")
 
 st.title('Flower Classification Using CNN')
 
