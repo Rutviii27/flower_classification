@@ -6,12 +6,12 @@ from PIL import UnidentifiedImageError
 from PIL import Image
 
 
-json_file = open('_flower.json', 'r')
+json_file = open('flower.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(loaded_model_json)
 
-loaded_model.load_weights("_flower.h5")
+loaded_model.load_weights("flower.h5")
 # print("Loaded model from disk")
 
 st.title('Flower Classification Using CNN')
